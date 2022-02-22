@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     var overShapeLayer: CAShapeLayer! {
         didSet {
             overShapeLayer.lineWidth = 20
-            overShapeLayer.lineCap = .round
+            overShapeLayer.lineCap = .square
             overShapeLayer.strokeEnd = 0
             overShapeLayer.strokeColor = UIColor.systemGreen.cgColor
         }
@@ -72,6 +72,10 @@ class HomeViewController: UIViewController {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: self.view.frame.width / 2 - 100, y: self.view.frame.height / 2))
         path.addLine(to: CGPoint(x: self.view.frame.width / 2 + 100, y: self.view.frame.height / 2))
+        path.addLine(to: CGPoint(x: self.view.frame.width / 2 + 100, y: self.view.frame.height / 2 + 100))
+        path.addLine(to: CGPoint(x: self.view.frame.width / 2 - 100, y: self.view.frame.height / 2 + 100))
+        path.addLine(to: CGPoint(x: self.view.frame.width / 2 - 100, y: self.view.frame.height / 2))
+
         shapelayer.path = path.cgPath
     }
     
@@ -87,6 +91,14 @@ class HomeViewController: UIViewController {
         overShapeLayer = CAShapeLayer()
         view.layer.addSublayer(overShapeLayer)
         
+        let loadingShape = CABasicAnimation(keyPath: "strokeEnd")
+        loadingShape.toValue = 1
+        loadingShape.duration = 5
+        loadingShape.timingFunction = CAMediaTimingFunction(name: .easeIn)
+        loadingShape.fillMode = .both
+        loadingShape.isRemovedOnCompletion = false
+        loadingShape.delegate = self
+        overShapeLayer.add(loadingShape, forKey: loadingShape.keyPath)
         
         
         
@@ -106,4 +118,10 @@ class HomeViewController: UIViewController {
      }
      */
     
+}
+
+extension HomeViewController: CAAnimationDelegate {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        print("finish")
+    }
 }
