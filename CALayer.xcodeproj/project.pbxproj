@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF68223227C4D26800600BB6 /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68223027C4D26800600BB6 /* MaskViewController.swift */; };
+		DF68223327C4D26800600BB6 /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF68223127C4D26800600BB6 /* MaskViewController.xib */; };
+		DF68223627C4DD6600600BB6 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68223427C4D54E00600BB6 /* MyView.swift */; };
+		DF68223827C4E2CB00600BB6 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68223727C4E2CB00600BB6 /* MyButton.swift */; };
 		DF81E7DF27C42913004C1F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81E7DE27C42913004C1F97 /* AppDelegate.swift */; };
 		DF81E7E127C42913004C1F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81E7E027C42913004C1F97 /* SceneDelegate.swift */; };
 		DF81E7E827C42913004C1F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF81E7E727C42913004C1F97 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF68223027C4D26800600BB6 /* MaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
+		DF68223127C4D26800600BB6 /* MaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
+		DF68223427C4D54E00600BB6 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyView.swift; path = "CALayer/Home module/MyView.swift"; sourceTree = SOURCE_ROOT; };
+		DF68223727C4E2CB00600BB6 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		DF81E7DB27C42913004C1F97 /* CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF81E7DE27C42913004C1F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF81E7E027C42913004C1F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +95,10 @@
 			children = (
 				DF81E7F527C430ED004C1F97 /* HomeViewController.swift */,
 				DF81E7F627C430ED004C1F97 /* HomeViewController.xib */,
+				DF68223027C4D26800600BB6 /* MaskViewController.swift */,
+				DF68223127C4D26800600BB6 /* MaskViewController.xib */,
+				DF68223427C4D54E00600BB6 /* MyView.swift */,
+				DF68223727C4E2CB00600BB6 /* MyButton.swift */,
 			);
 			path = "Home module";
 			sourceTree = "<group>";
@@ -151,6 +163,7 @@
 			files = (
 				DF81E7EB27C42913004C1F97 /* LaunchScreen.storyboard in Resources */,
 				DF81E7E827C42913004C1F97 /* Assets.xcassets in Resources */,
+				DF68223327C4D26800600BB6 /* MaskViewController.xib in Resources */,
 				DF81E7F827C430ED004C1F97 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +177,10 @@
 			files = (
 				DF81E7DF27C42913004C1F97 /* AppDelegate.swift in Sources */,
 				DF81E7E127C42913004C1F97 /* SceneDelegate.swift in Sources */,
+				DF68223627C4DD6600600BB6 /* MyView.swift in Sources */,
+				DF68223227C4D26800600BB6 /* MaskViewController.swift in Sources */,
 				DF81E7F727C430ED004C1F97 /* HomeViewController.swift in Sources */,
+				DF68223827C4E2CB00600BB6 /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
